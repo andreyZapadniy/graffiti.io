@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <script src="https://kit.fontawesome.com/14340452b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="paralax">
+        <div class="scena"></div>
+    </div>
+    <div class="wraper">
+        <header class="header">
+            <img src="img/Logo2.png" alt="Логотип" class="logo">
+            <div class="container">
+                <div class="burger">
+                    <span class="burger__line"></span>
+                </div>
+                <nav class="nav">
+                    <ul class="menu flex">
+                        <li class="menu-items"><a href="index.html" class="menu-link">Главная</a></li>
+                        <li class="menu-items"><a href="artists.html" class="menu-link">Художники</a></li>
+                        <li class="menu-items"><a href="gallery.html" class="menu-link active">Галерея</a></li>
+                        <li class="menu-items"><a href="suppliers.html" class="menu-link">Поставщики</a></li>
+                        <li class="menu-items"><a href="contacts.html" class="menu-link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr class="hr">
+        <main class="main">
+            <form action="#" class="form-search">
+                <input type="search" name="search" class="search" placeholder="Search...">
+            </form>
+            <h1 class="head-title">Галерея</h1>
+            <section class="section-slider">
+                <div class="wrap-slider">
+                    <div class="slider">
+                        <div class="slider__content">
+                            <img src="img/gallery1.jpg" alt="" class="slider__img">
+                            <p class="slider__text">Описание картины; кто сделал и где</p>
+                        </div>
+                        <div class="slider__content">
+                            <img src="img/gallery2.jpg" alt="" class="slider__img">
+                            <p class="slider__text">Описание картины; кто сделал и где</p>
+                        </div>
+                        <div class="slider__content">
+                            <img src="img/gallery3.jpg" alt="" class="slider__img">
+                            <p class="slider__text">Описание картины; кто сделал и где</p>
+                        </div>
+                        <div class="slider__content">
+                            <img src="img/gallery4.jpg" alt="" class="slider__img">
+                            <p class="slider__text">Описание картины; кто сделал и где</p>
+                        </div>
+                        <div class="slider__content">
+                            <img src="img/gallery5.jpg" alt="" class="slider__img">
+                            <p class="slider__text">Описание картины; кто сделал и где</p>
+                        </div>
+                        <div class="slider__content">
+                            <img src="img/gallery6.jpg" alt="" class="slider__img">
+                            <p class="slider__text">Описание картины; кто сделал и где</p>
+                        </div>
+                    </div>
+                    <div class="wrap-button">
+                        <button class="next-slide">Дальше
+                            <span class="arrow-right">&rsaquo;</span>
+                        </button>
+                        <button class="prev-slide"><span class="arrow-left">
+                                &lsaquo; </span>Назад
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="socials">
+            <a href="#" class="socials-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="socials-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="socials-icon"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="socials-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="socials-icon"><i class="fab fa-tumblr"></i></a>
+            <a href="#" class="socials-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script src="js/jquery-1.7.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).on('ready', function () {
+            $('.slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: false,
+                fade: true,
+                prevArrow: '.prev-slide',
+                nextArrow: '.next-slide'
+            });
+        });
+    </script>
+</body>
+
+</html>

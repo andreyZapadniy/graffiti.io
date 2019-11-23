@@ -1,0 +1,30 @@
+@keyframes arrowRight {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 10px;
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    margin: -20px 0 0;
+  }
+  100% {
+    opacity: 1;
+    margin: 0;
+  }
+}
+@keyframes dots {
+  0% {
+    opacity: 1;
+    color: #fff;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    opacity: 0;
+  }
+}
